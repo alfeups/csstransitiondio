@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #7fff00;
+    font-family: 'amatic sc', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-70deg, #050404, #085078, #008080, #1f4353);
+    background-size: 300% 300% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundTransition 8s ease-in-out infinite;
+    position: relative;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 1rem 4rem;
+    border: 1px solid #ffffff;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.80, 0.125, 0.875, 0.99);
+    animation-timing-function: ease;
+}
+
+a:hover {
+    color: #ffd700;
+    background-color: #000080;
+}
+
+@keyframes backgroundTransition {
+    0% {background-position:  0% 30%;}
+    25% {background-position: 30% 40%;}
+    50% {background-position: 40% 70%;}
+    75% {background-position: 70% 85%;}
+    100% {background-position: 85% 100%;}
+}
